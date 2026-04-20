@@ -1,6 +1,6 @@
 // UPDATE THIS URL AFTER DEPLOYING YOUR BACKEND TO RENDER!
 // For local development, keep it as 'http://127.0.0.1:8000'
-const API_BASE_URL = 'http://127.0.0.1:8000';
+const API_BASE_URL = 'https://sms-spam-backend-g2xn.onrender.com';
 
 document.addEventListener('DOMContentLoaded', () => {
     const analyzeBtn = document.getElementById('analyze-btn');
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
         } catch (error) {
             console.error('Error during prediction:', error);
-            alert('Failed to connect to the backend server. Make sure FastAPI server is running on http://127.0.0.1:8000');
+            alert('Failed to connect to the backend server. Make sure FastAPI server is running on https://sms-spam-backend-g2xn.onrender.com');
             // Restore Button State
             btnText.classList.remove('hidden');
             loader.classList.add('hidden');
