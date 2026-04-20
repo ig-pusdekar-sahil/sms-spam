@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Shield | ML SMS Detector</title>
+    <meta name="description" content="Advanced machine learning powered SMS spam detector layout.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>Spam Shield</h1>
+            <p>Advanced Machine Learning SMS Detection</p>
+        </header>
+        
+        <main class="glass-panel">
+            <div class="input-section">
+                <label for="sms-input">Message Content</label>
+                <textarea id="sms-input" placeholder="Paste the SMS text here to analyze its safety..."></textarea>
+                <button id="analyze-btn" class="primary-btn">
+                    <span class="btn-text">Analyze Message</span>
+                    <span class="loader hidden"></span>
+                </button>
+            </div>
+            
+            <div id="result-section" class="result-section hidden">
+                <div class="result-card">
+                    <div class="icon-container" id="result-icon"></div>
+                    <div class="result-details">
+                        <h2 id="result-heading">Analyzing...</h2>
+                        <p id="result-confidence">Please wait.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Powered by FastAPI & Scikit-Learn</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
